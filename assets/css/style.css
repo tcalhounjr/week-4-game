@@ -1,0 +1,9 @@
+body {
+    background-image: url("../images/bg/whitey/whitey.png");
+    background-color: #cccccc;
+ }
+
+.carousel-img {
+    width: 100%;
+    height: 600px;
+}
