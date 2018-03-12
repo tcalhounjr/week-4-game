@@ -7,3 +7,93 @@ body {
     width: 100%;
     height: 600px;
 }
+
+.page-header {
+    background-color: #ffffff;
+}
+
+#welcome-text {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#box-score {
+    margin-bottom: 3rem;
+}
+
+#wins {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    margin: -19% 0 0 70%;
+
+}
+
+#losses {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    margin: -19% 0 0 70%;
+
+}
+
+.score-section {
+    margin-left: 1rem;
+}
+
+.scoreboard {
+    width: 100%;
+    border: #000000;
+    background-color: black;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    height: 300px;
+    padding: 0%;
+    position: relative;
+    
+}
+
+.scoreboard-header {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.score {
+    color: white;
+    font-size: 12rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25% 0 0 -35%;
+
+}
+
+.stat-sheet {
+    padding-left: 5rem;
+    color: white;
+    font-size: 3rem;
+    margin-top: -25%;
+}
+
+.jewels-section {
+    margin-left: 4rem;
+}
+
+.thumbnail {
+    padding-right: 0%;
+}
+
+.jewel-thumbnail {
+    width: 200px;
+    height: 200px;
+}
+
+.jewel-value {
+    margin-top: 2rem;
+    margin-left: 80px;
+}

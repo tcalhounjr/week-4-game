@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BEDAZZLED</title>
+    <title>Run the Jewels</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="icon" href="assets/images/favicon/tcjr.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -25,28 +25,28 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img class="d-block w-100 carousel-img" src="assets/images/carousel/soccer.jpg" alt="First slide">
+                <img class="d-block w-100 carousel-img" src="assets/images/carousel/25th-Hour.png" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>I should put some text here about the game</h5>
                     <p>and then a little more text here</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-img" src="assets/images/carousel/field.jpg" alt="Second slide">
+                <img class="d-block w-100 carousel-img" src="assets/images/carousel/italianjob.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>I should put some text here about the game</h5>
                     <p>and then a little more text here</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-img" src="assets/images/carousel/court.jpg" alt="Third slide">
+                <img class="d-block w-100 carousel-img" src="assets/images/carousel/oceans.jpg" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>I should put some text here about the game</h5>
                     <p>and then a little more text here</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-img" src="assets/images/carousel/baseball.jpg" alt="Fourth slide">
+                <img class="d-block w-100 carousel-img" src="assets/images/carousel/score.jpg" alt="Fourth slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>I should put some text here about the game</h5>
                     <p>and then a little more text here</p>
@@ -62,23 +62,63 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="container-fluid">
+    <div class="page-header">
+        <span id="welcome">
+            <h1 id="welcome-text">Diamonds are Forever <small>Crack the code to the Safe and Run the Jewels!</small></h1>
+        </span>
+    </div>
+    <div class="container-fluid score-section">
         <div class="row">
-            <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
-            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+            <div class="col-xs-12 col-md-4 scoreboard">
+                <header class="scoreboard-header"><h2>Computer Guess</h2></header>
+                <p id="cpu-number" class="score">999</p>
+            </div>
+            <div class="col-xs-12 col-md-4 scoreboard">
+                <header class="scoreboard-header"><h2>User Guess</h2></header>
+                <p id="user-number" class="score">999</p>
+            </div>
+            <div class="col-xs-12 col-md-3 scoreboard">
+                <header id="box-score" class="scoreboard-header"><h2>Box Score</h2></header>
+                <span class="stat-sheet">Wins: <p id="wins">0</p></span>
+                <br>
+                <span class="stat-sheet">Losses: <p id="losses">0</p></span>
+            </div>
         </div>
           
         <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row">
-            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-        </div>
-          
-        <!-- Columns are always 50% wide, on mobile and desktop -->
-        <div class="row">
-            <div class="col-xs-6">.col-xs-6</div>
-            <div class="col-xs-6">.col-xs-6</div>
+        <div class="row jewels-section">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img class="jewel-thumbnail" src="assets/images/game/diamond.png" alt="...">
+                    <div class="jewel-thumbnail-caption">
+                        <h3 id="diamond" class="jewel-value">99</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img class="jewel-thumbnail" src="assets/images/game/purple.png" alt="...">
+                    <div class="jewel-thumbnail-caption">
+                        <h3 id="purple" class="jewel-value">99</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img class="jewel-thumbnail" src="assets/images/game/emerald.png" alt="...">
+                    <div class="jewel-thumbnail-caption">
+                        <h3 id="emerald" class="jewel-value">99</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img class="jewel-thumbnail" src="assets/images/game/sapphire.png" alt="...">
+                    <div class="jewel-thumbnail-caption">
+                        <h3 id="sapphire" class="jewel-value">99</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
