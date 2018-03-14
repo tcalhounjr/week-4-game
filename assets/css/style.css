@@ -92,7 +92,12 @@ body {
     width: 200px;
     height: 200px;
     cursor: pointer;
+}
+
+.jewel-button {
     border: none;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .jewel-value {

@@ -41,6 +41,9 @@ function resetScoreboard() {
     cpuNum = getRandomInt(cpuMinScore, cpuMaxScore);
     totalPoints = 0;
     diamond.setValue();
+    topaz.setValue();
+    emerald.setValue();
+    sapphire.setValue();
     writeToScreen(userScore, totalPoints);
     writeToScreen(cpuScore, cpuNum);
     writeToScreen(diamondHTML, "");
@@ -57,6 +60,34 @@ var diamond = {
         return this.value;
     }
 }
+
+var topaz = {
+    value: 0,
+    
+    setValue: function() {
+        this.value = getRandomInt(minJewelValue, maxJewelValue);
+        return this.value;
+    }
+}
+
+var emerald = {
+    value: 0,
+    
+    setValue: function() {
+        this.value = getRandomInt(minJewelValue, maxJewelValue);
+        return this.value;
+    }
+}
+
+var sapphire = {
+    value: 0,
+    
+    setValue: function() {
+        this.value = getRandomInt(minJewelValue, maxJewelValue);
+        return this.value;
+    }
+}
+
 
 
 
@@ -91,6 +122,9 @@ $(document).ready(function() {
 
     resetScoreboard();
     diamond.setValue();
+    topaz.setValue();
+    emerald.setValue();
+    sapphire.setValue();
 
     if (!gameOver) { 
     
@@ -101,21 +135,26 @@ $(document).ready(function() {
         });
 
         $("#topaz-button").click(function() {
-            doSomeStuff();
+            totalPoints = updatePointTotal(topaz.value);
+            writeToScreen(userScore, totalPoints);
+            gameOver = isGameOver();
         });
 
         $("#emerald-button").click(function() {
-            doSomeStuff();
+            totalPoints = updatePointTotal(emerald.value);
+            writeToScreen(userScore, totalPoints);
+            gameOver = isGameOver();
         });
 
         $("#sapphire-button").click(function() {
-            doSomeStuff();
+            totalPoints = updatePointTotal(sapphire.value);
+            writeToScreen(userScore, totalPoints);
+            gameOver = isGameOver();
         });
 
     }
     else {
         resetScoreboard();
-
     }
 
 });
